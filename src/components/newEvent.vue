@@ -42,7 +42,11 @@
         </span>
       </div>
     </div>
-    <app-event-modal v-if="eventPop" v-on:added-event="addEvent"></app-event-modal>
+    <app-event-modal
+      v-if="eventPop"
+      v-on:added-event="addEvent"
+      v-on:add-event-cancelled="eventPop = false"
+    ></app-event-modal>
   </div>
 </template>
 

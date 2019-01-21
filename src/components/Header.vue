@@ -26,14 +26,14 @@ export default {};
   color: aliceblue;
   font-weight: 200;
   font-size: 22px;
-  padding: 10px;
+  padding: 15px;
   transition: all 0.3s;
 }
 
 .link:hover {
   text-decoration: none;
   color: aliceblue;
-  border-bottom: 2px solid aliceblue;
+  border-bottom: 1.2px solid aliceblue;
 }
 </style>
 

@@ -1,6 +1,11 @@
 <template>
   <div class="event-modal">
     <div class="container text-center event-form">
+      <div class="row justify-content-end">
+        <button class="btn btn-light cancel-btn" @click="$emit('add-event-cancelled')">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
       <div class="form-group">
         <label for="event-name" class="lead">Event Name</label>
         <input type="text" class="form-control" id="event-name" v-model="eventName">
@@ -29,7 +34,6 @@ export default {
           eventName: this.eventName,
           description: this.description
         });
-        this.eventPop = false;
       }
     }
   }
@@ -52,8 +56,6 @@ export default {
   margin: 10% auto;
   padding: 10px 20px;
   background: linear-gradient(#16d0ff, #163dff);
-  opacity: 1;
-  z-index: 2;
   border-radius: 3px;
   border: 0.4px solid aliceblue;
 }

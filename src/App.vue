@@ -26,8 +26,7 @@ export default {
 
 
 <style>
-#app {
-  background: linear-gradient(#16d0ff, #163dff);
-  height: 100vh;
+body {
+  background: linear-gradient(#16d0ff, #163dff) fixed;
 }
 </style>
