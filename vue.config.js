@@ -1,4 +1,5 @@
-vue.config.js
 module.exports = {
-  publicPath: '<my-first-project>'
+  publicPath: process.env.NODE_ENV === 'production' ?
+    '/personal-calendar/' :
+    '/'
 }
