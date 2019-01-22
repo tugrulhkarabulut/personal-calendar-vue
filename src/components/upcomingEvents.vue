@@ -27,6 +27,8 @@ export default {
         let dateArr = event.date.split(".").slice(0, 3);
         dateArr[2] = dateArr[2].split(" ")[0];
         dateArr = dateArr.map(date => Number(date));
+        dateArr[1] *= 30;
+        dateArr[2] *= 365;
         const date = dateArr.reduce((sum, el) => (sum += el));
         return { precedence: date, event };
       });
