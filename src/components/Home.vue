@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container home-container">
       <div class="card text-center home mt-5">
         <div class="card-body row align-items-center justify-content-center">
           <h2 class="card-title title col-12">Welcome!</h2>
@@ -39,5 +39,9 @@ export default {};
 
 .title {
   font-weight: 200;
+}
+
+.home-container {
+  transform: translate(0, 50%);
 }
 </style>
