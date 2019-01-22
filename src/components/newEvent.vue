@@ -123,6 +123,11 @@ export default {
   color: white;
   font-size: 2em;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon-move:hover {
+  transform: scale(0.95);
 }
 
 .events {

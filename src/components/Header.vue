@@ -34,6 +34,7 @@ export default {};
   text-decoration: none;
   color: aliceblue;
   border-bottom: 1.2px solid aliceblue;
+  transform: scale(1.05);
 }
 </style>
 
