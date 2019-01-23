@@ -11,14 +11,14 @@ import {
 
 
 export const routes = [{
-    path: '/',
+    path: 'personal-calendar/',
     component: Home
   }, {
-    path: '/newevent',
+    path: 'personal-calendar/newevent',
     component: newEvent,
   },
   {
-    path: '/myevents',
+    path: 'personal-calendar/myevents',
     component: upcomingEvents
   }
 ];
