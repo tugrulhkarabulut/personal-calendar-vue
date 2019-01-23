@@ -7,7 +7,7 @@
           <p class="card-text lead col-12">This is a personal calendar app.
             <br>You can track your upcoming events.
           </p>
-          <router-link to="/newevent" class="btn home-btn col-3">
+          <router-link :to="`${publicPath}/newevent`" class="btn home-btn col-3">
             <span class="lead">Get Started</span>
           </router-link>
         </div>
@@ -17,7 +17,14 @@
 </template>
 
 <script>
-export default {};
+import { publicPath } from "../../vue.config.js";
+export default {
+  data() {
+    return {
+      publicPath: publicPath
+    };
+  }
+};
 </script>
 
 <style>
