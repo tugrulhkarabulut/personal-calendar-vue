@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: '/personal-calendar/'
+  publicPath: process.env.NODE_ENV === 'production' ?
+    '/personal-calendar/' : '/'
 }
