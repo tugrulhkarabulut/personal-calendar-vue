@@ -3,13 +3,13 @@
     <nav class="navbar navbar-expand">
       <ul class="navbar-nav row w-100 text-center">
         <li class="nav-item col-4">
-          <router-link :to="`/`" class="link">HOME</router-link>
+          <router-link :to="`${publicPath}/`" class="link">HOME</router-link>
         </li>
         <li class="nav-item col-4">
-          <router-link :to="`/myevents`" class="link">UPCOMING EVENTS</router-link>
+          <router-link :to="`${publicPath}/myevents`" class="link">UPCOMING EVENTS</router-link>
         </li>
         <li class="nav-item col-4">
-          <router-link :to="`/newevent`" class="link">ADD AN EVENT</router-link>
+          <router-link :to="`${publicPath}/newevent`" class="link">ADD AN EVENT</router-link>
         </li>
       </ul>
     </nav>
@@ -18,7 +18,13 @@
 
 <script>
 import { publicPath } from "../../vue.config.js";
-export default {};
+export default {
+  data() {
+    return {
+      publicPath: publicPath
+    };
+  }
+};
 </script>
 
 
