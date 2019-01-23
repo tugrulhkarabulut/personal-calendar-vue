@@ -7,6 +7,9 @@
 
 <script>
 import Header from "./components/Header.vue";
+import {
+  publicPath
+} from '../vue.config.js';
 export default {
   data() {
     return {

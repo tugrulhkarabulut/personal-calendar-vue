@@ -11,14 +11,14 @@ import {
 
 
 export const routes = [{
-    path: '/',
+    path: publicPath + '/',
     component: Home
   }, {
-    path: '/newevent',
+    path: publicPath + '/newevent',
     component: newEvent,
   },
   {
-    path: '/myevents',
+    path: publicPath + '/myevents',
     component: upcomingEvents
   },
   {
