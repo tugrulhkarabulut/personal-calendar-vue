@@ -41,8 +41,7 @@ export default {
     addEvent() {
       this.$emit("add-event", this.date);
     }
-  },
-  created() {}
+  }
 };
 </script>
 

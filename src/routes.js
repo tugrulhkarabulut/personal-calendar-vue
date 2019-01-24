@@ -9,16 +9,18 @@ import {
 } from '../vue.config.js';
 
 
-
 export const routes = [{
     path: `${publicPath}/`,
+    name: 'home',
     component: Home
   }, {
     path: `${publicPath}/newevent`,
+    name: 'newevent',
     component: newEvent,
   },
   {
     path: `${publicPath}/myevents`,
+    name: 'upcoming',
     component: upcomingEvents
   },
   {
