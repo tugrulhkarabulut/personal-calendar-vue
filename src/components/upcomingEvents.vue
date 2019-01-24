@@ -4,11 +4,11 @@
       <div class="container home-container">
         <div class="card text-center home mt-5">
           <div class="card-body row align-items-center justify-content-center">
-            <h2 class="card-title title col-12">You have no events.</h2>
-            <p class="card-text lead col-12">You have no upcoming events.
+            <h2 class="card-title title col-md-12">You have no events.</h2>
+            <p class="card-text lead col-md-12">You have no upcoming events.
               <br>You can add some and track them from here.
             </p>
-            <router-link :to="{name: 'newevent'}" class="btn home-btn col-3">
+            <router-link :to="{name: 'newevent'}" class="btn home-btn col-sm-3">
               <span class="lead">Add an Event</span>
             </router-link>
           </div>

@@ -58,7 +58,7 @@ export default {
 
 .date-card-header {
   font-size: 1rem;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .date-card-text {
