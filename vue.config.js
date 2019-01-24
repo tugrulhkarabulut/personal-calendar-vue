@@ -1,3 +1,1 @@
-module.exports = {
-  publicPath: '/personal-calendar/'
-}
+module.exports.publicPath = '/personal-calendar/';
