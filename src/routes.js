@@ -12,12 +12,12 @@ export const routes = [{
     name: 'home',
     component: Home
   }, {
-    path: `/personal-calendar/newevent`,
+    path: `/personal-calendar/newevent/`,
     name: 'newevent',
     component: newEvent,
   },
   {
-    path: `/personal-calendar/myevents`,
+    path: `/personal-calendar/myevents/`,
     name: 'upcoming',
     component: upcomingEvents
   },
