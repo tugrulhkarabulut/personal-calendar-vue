@@ -4,22 +4,20 @@ import Home from './components/Home.vue';
 import newEvent from './components/newEvent.vue';
 import EventCmp from './components/Event.vue';
 import upcomingEvents from './components/upcomingEvents.vue';
-const {
-  publicPath
-} = require('../vue.config.js');
+
 
 
 export const routes = [{
-    path: `${publicPath}/`,
+    path: `/personal-calendar/`,
     name: 'home',
     component: Home
   }, {
-    path: `${publicPath}/newevent`,
+    path: `/personal-calendar/newevent`,
     name: 'newevent',
     component: newEvent,
   },
   {
-    path: `${publicPath}/myevents`,
+    path: `/personal-calendar/myevents`,
     name: 'upcoming',
     component: upcomingEvents
   },
