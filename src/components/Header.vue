@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { publicPath } from "../../vue.config.js";
+const { publicPath } = require("../../vue.config.js");
 export default {
   data() {
     return {

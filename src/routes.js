@@ -4,9 +4,9 @@ import Home from './components/Home.vue';
 import newEvent from './components/newEvent.vue';
 import EventCmp from './components/Event.vue';
 import upcomingEvents from './components/upcomingEvents.vue';
-import {
+const {
   publicPath
-} from '../vue.config.js';
+} = require('../vue.config.js');
 
 
 export const routes = [{
