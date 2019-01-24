@@ -8,14 +8,21 @@ import upcomingEvents from './components/upcomingEvents.vue';
 
 
 export const routes = [{
-    path: '/',
+    path: `/personal-calendar/`,
+    name: 'home',
     component: Home
   }, {
-    path: '/newevent',
+    path: `/personal-calendar/newevent/`,
+    name: 'newevent',
     component: newEvent,
   },
   {
-    path: '/myevents',
+    path: `/personal-calendar/myevents/`,
+    name: 'upcoming',
     component: upcomingEvents
+  },
+  {
+    path: '*',
+    component: Home
   }
 ];

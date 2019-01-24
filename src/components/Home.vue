@@ -3,11 +3,11 @@
     <div class="container home-container">
       <div class="card text-center home mt-5">
         <div class="card-body row align-items-center justify-content-center">
-          <h2 class="card-title title col-12">Welcome!</h2>
-          <p class="card-text lead col-12">This is a personal calendar app.
+          <h2 class="card-title title col-md-12">Welcome!</h2>
+          <p class="card-text home-card-text lead col-md-12">This is a personal calendar app.
             <br>You can track your upcoming events.
           </p>
-          <router-link to="/newevent" class="btn home-btn col-3">
+          <router-link :to="{name: 'newevent'}" class="btn home-btn col-sm-3">
             <span class="lead">Get Started</span>
           </router-link>
         </div>
@@ -17,7 +17,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      publicPath: publicPath
+    };
+  }
+};
 </script>
 
 <style>
@@ -30,6 +36,7 @@ export default {};
 .home-btn {
   background: linear-gradient(#16d0ff, #163dff);
   color: aliceblue;
+  font-size: 0.1rem;
 }
 
 .home-btn:hover {
@@ -43,5 +50,9 @@ export default {};
 
 .home-container {
   transform: translate(0, 50%);
+}
+
+.home-card-text {
+  font-size: 1.3rem;
 }
 </style>
